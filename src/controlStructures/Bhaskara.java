@@ -1,12 +1,14 @@
 /****************************************************
- * Write a cone who ask for the value of A, B and C of
+ * Write a code who ask for the value of A, B and C of
  * a quadratic equation and calculate it.
  * Considering: 
  * if A=0 == error, because it is not quadratic equation;
  * if delta<0 == there are no real roots. Inform the user and end the code;
- * if delta>=0 then calculate de possible(s) root(s). 
- * PRINT THE FORMULA
- * and PRINT THE error message (it is not a quadratic equation), or the possible results.
+ * if delta>=0 then calculate the possible(s) root(s). 
+ * Print the formula;
+ * Print the delta and roots;
+ * Print the final results;
+ * or PRINT THE error message (it is not a quadratic equation), or the possible results.
  */
 
 package controlStructures;
