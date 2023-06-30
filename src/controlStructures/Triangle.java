@@ -8,14 +8,12 @@ package controlStructures;
 * or Is scalene = three different sides. :)))
 *************************************************************************************/
 
+ import java.util.Scanner;
 
 	public class Triangle {
-	import java.util.Scanner;
-	
 	public static void main(String[] args) {
 	
-		
-		Scanner scan = new Scanner(System.in);
+	Scanner scan= new Scanner(System.in);
 
 
 		System.out.println("This program will find out if your numbers can form a real triangle and calculate what type it is...");
