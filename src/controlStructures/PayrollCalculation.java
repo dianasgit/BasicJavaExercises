@@ -6,9 +6,7 @@ public class PayrollCalculation {
 
 	public static void main(String[] args) {
 
-		
-		// Faça um código que calcule a folha de pagamento de uma empresa considerando: IR conforme salário bruto ( até 900 isento; até 1500 desconta 15% ; até 2500 desconto 10% ; acima de 2500 desconto de 20%) +  3% sindicato + FGTS de 11%, não é descontado pois é depositado pela empresa. Calcule os salário liquido pedindo ao usuário: Valor da sua hora e quantidade de horas trabalhadas. Imprima na tela as seguintes informação: salario bruto; (-) IR (N%); (-) SINDICATO (N%) ; (FGTS DEPOSITADO) (N%) ; total dos descontos ; salário liquido.
-		
+			
 		
 		Scanner scan = new Scanner(System.in);
 		
