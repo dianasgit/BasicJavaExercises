@@ -1,19 +1,30 @@
+/*Write a code that calculates the payroll of a company considering:
+- Government tax "IR" according to gross salary, being: up to 900 exempt; up to 1500 15% discount; up to 2500 10% discount; above 2500 20% discount.
+- 3% discount for union contributions.
+- "FGTS" insurance: 11% however it is not deducted from the salary, but deposited in a different account by the company.
+Afterwards, calculate the net salary by asking the user:
+- Value of your hours worked and number of hours worked.
+Print the following information on the screen:
+Gross salary = ;
+(-) Government tax IR (%) = ;
+(-) Union (%) = ;
+(FGTS DEPOSITED) (%) = ;
+Total discounts = ;
+Net salary = .
+ */
+
+
 package controlStructures;
-
 import java.util.Scanner;
-
 public class PayrollCalculation {
 
 	public static void main(String[] args) {
-
-			
+	Scanner scan = new Scanner(System.in);
 		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("DIgite o valor da hora trabalhada: ");
+		System.out.println("Write the value of the worked hour: ");
 		double valorHora = scan.nextDouble();
 		
-		System.out.println("Digite a quatidade de horas trabalhadas: ");
+		System.out.println("write the number of hours worked: ");
 		double qtdHoras = scan.nextDouble();
 		double salarioBruto = qtdHoras * valorHora;
 		
@@ -34,18 +45,18 @@ public class PayrollCalculation {
 		double descontos = descontoIr + sindicato;
 		double salarioLiq = salarioBruto - descontos;
 		
-		System.out.println("Salário bruto = " + salarioBruto);
+		System.out.println("Gross Salary = " + salarioBruto+ ";");
 		
 		if (salarioBruto <=900) {
-		System.out.println(" (-) IR ("+ir+"%) = ISENTO");
+		System.out.println("    (-) Government tax IR  (" + ir+"%) = EXEMPT;");
 		} else {
-		System.out.println(" (-) IR ("+ir+"%) = " + descontoIr);
+		System.out.println("    (-) Government tax IR  (" + ir+ "%) = " + descontoIr+ ";");
 		}
 		
-		System.out.println(" (-) Contribuição sindical (3%)= " + sindicato);
-		System.out.println(" FGTS Depositado (11%)= " + fgts);
-		System.out.println("Total de descontos= "+ descontos);
-		System.out.println("Salário líquido= "+ salarioLiq);
+		System.out.println("    (-) Union contribution (3%)= " + sindicato+ ";");
+		System.out.println("    FGTS Deposited (11%)= " + fgts + ";");
+		System.out.println(" Total discounts = "+ descontos + ";");
+		System.out.println("****NET SALARY = "+ salarioLiq + " *****.");
 		
 		
 	}
