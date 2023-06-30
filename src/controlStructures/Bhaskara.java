@@ -19,7 +19,7 @@ public static void main(String[] args) {
 Scanner scan = new Scanner(System.in);
 		
 	System.out.println("This program will calculate a quadratic equation using Bhaskara formula!"
-	+" Remember, quadratic equation has the value of:  Ax² + Bx + C:");
+	+" Remember, quadratic equation has the value of:  Ax² + Bx + C = 0.");
 	
 	System.out.println("Inform the value of A:");
 	double varA = scan.nextDouble();
@@ -34,9 +34,6 @@ Scanner scan = new Scanner(System.in);
 		System.out.println("Inform the value of C:");
 		double varC = scan.nextDouble();
 		
-		System.out.println("Inform the value of X:");
-		double varX = scan.nextDouble();
-	
 		double delta = ((varB*varB)- (4*varA*varC));
 	
 			if (delta < 0) {
@@ -46,10 +43,10 @@ Scanner scan = new Scanner(System.in);
 			} else if (delta==0) {
 				double x1 = ((-1*varB - Math.sqrt(delta)) /2 * varA);
 				double result = varA*(x1*x1) + (x1*varB) + varC;
-				System.out.println("The formula: "+varA +"*"+ varX+"² + "+varB+"*"+varX+ " + " +varC);
+				System.out.println("The formula: "+varA +"x² + "+varB+"x + " +varC +"= 0");
 				System.out.println("Has Delta = " +delta);
 				System.out.println("X1 = " +x1);
-				System.out.println("End final result= " + result);
+				System.out.println("Final result of x = " + result);
 			
 				
 			} else if (delta >0) {
@@ -59,12 +56,12 @@ Scanner scan = new Scanner(System.in);
 				double result1 = varA*(x1*x1) + (x1*varB) + varC;
 				double result2 = varA*(x2*x2) + (x2*varB) + varC;
 							
-				System.out.println("The formula: "+varA +"*"+ varX+"² + "+varB+"*"+varX+ " + " +varC);
+				System.out.println("The formula: "+varA +"x² + "+varB+ "x + " +varC +"= 0");
 				System.out.println("Has Delta = " +delta);
 				System.out.println("X1 = " +x1);
 				System.out.println("X2 = " +x2);
-				System.out.println("End final result= " + result1);
-				System.out.println("End final result= " + result2);
+				System.out.println("Final result x' = " + result1);
+				System.out.println("Final result x''= " + result2);
 			}
 	}
 }
