@@ -33,6 +33,7 @@ public class ForLoops {
 		int soma = 0;
 		for(int i=1 ; i<5 ; soma += i++); {
 		System.out.println("Soma= "+ soma);
+		System.out.println("commit ok");
 		}
 		
 		// the {} is not obligatory to the code works.. but it is good practices 

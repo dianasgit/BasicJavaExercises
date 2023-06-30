@@ -3,10 +3,10 @@
 * Is a triangle = the sum of any 2 sides > the third side... and if it is, check that:
 * It is equilateral = three equal sides;
 * Is isosceles = any two equal sides;
-* or Is scalene = three different sides. :)))
+* or Is scalene  = three different sides. :)
 *************************************************************************************/
 package controlStructures;
-import java.util.Scanner;
+import java.util.Scanner; 
 
 	public class Triangle {
 	public static void main(String[] args) {
