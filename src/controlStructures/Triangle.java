@@ -1,5 +1,3 @@
-package controlStructures;
-
 /************************************************************************************ 
 * Write a code that asks the user for the 3 sides of a triangle and checks that:
 * Is a triangle = the sum of any 2 sides > the third side... and if it is, check that:
@@ -7,8 +5,8 @@ package controlStructures;
 * Is isosceles = any two equal sides;
 * or Is scalene = three different sides. :)))
 *************************************************************************************/
-
- import java.util.Scanner;
+package controlStructures;
+import java.util.Scanner;
 
 	public class Triangle {
 	public static void main(String[] args) {
@@ -49,7 +47,7 @@ package controlStructures;
 		//IS SCALENE?
 			} else if (triangle ==true &&  lat1!=lat2 && lat1!=lat3) {
 				System.out.println("It's triangle and it's scalene!");
-			} 
+			}
 			
 	}
 	}
