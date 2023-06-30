@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author diana
+ *
+ */
+module BasicJavaExercises {
+}
