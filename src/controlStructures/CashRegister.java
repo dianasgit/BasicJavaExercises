@@ -36,8 +36,8 @@ public class CashRegister {
 	
 	System.out.println("\nReturn the change of = "+change);
 	
-	System.out.println("\n**********************************************\n To start a new purchase press the play button. \n**********************************************");
+	System.out.println("\n**********************************************\n To start a new purchase press the play button.  \n**********************************************");
+
 	
 	}
-	
 }
