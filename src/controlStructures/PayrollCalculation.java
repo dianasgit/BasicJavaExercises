@@ -24,7 +24,7 @@ public class PayrollCalculation {
 		System.out.println("Write the value of the worked hour: ");
 		double valorHora = scan.nextDouble();
 		
-		System.out.println("write the number of hours worked: ");
+		System.out.println("Write the number of hours worked: ");
 		double qtdHoras = scan.nextDouble();
 		double salarioBruto = qtdHoras * valorHora;
 		
@@ -45,7 +45,7 @@ public class PayrollCalculation {
 		double descontos = descontoIr + sindicato;
 		double salarioLiq = salarioBruto - descontos;
 		
-		System.out.println("Gross Salary = " + salarioBruto+ ";");
+		System.out.println("\nGross Salary = " + salarioBruto+ ";");
 		
 		if (salarioBruto <=900) {
 		System.out.println("    (-) Government tax IR  (" + ir+"%) = EXEMPT;");
@@ -55,10 +55,8 @@ public class PayrollCalculation {
 		
 		System.out.println("    (-) Union contribution (3%)= " + sindicato+ ";");
 		System.out.println("    FGTS Deposited (11%)= " + fgts + ";");
-		System.out.println(" Total discounts = "+ descontos + ";");
+		System.out.println("\nTotal discounts = "+ descontos + ";");
 		System.out.println("****NET SALARY = "+ salarioLiq + " *****.");
-		
-		
-	}
 
+	}
 }
