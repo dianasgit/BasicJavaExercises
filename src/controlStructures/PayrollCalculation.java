@@ -16,10 +16,12 @@ Net salary = .
 
 package controlStructures;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 public class PayrollCalculation {
 
 	public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
+	DecimalFormat df = new DecimalFormat ("###,###.##");
 		
 		System.out.println("Write the value of the worked hour: ");
 		double valorHora = scan.nextDouble();
@@ -53,10 +55,10 @@ public class PayrollCalculation {
 		System.out.println("    (-) Government tax IR  (" + ir+ "%) = " + descontoIr+ ";");
 		}
 		
-		System.out.println("    (-) Union contribution (3%)= " + sindicato+ ";");
-		System.out.println("    FGTS Deposited (11%)= " + fgts + ";");
-		System.out.println("\nTotal discounts = "+ descontos + ";");
-		System.out.println("****NET SALARY = "+ salarioLiq + " *****.");
+		System.out.println("    (-) Union contribution (3%)= " + df.format(sindicato)+ ";");
+		System.out.println("    FGTS Deposited (11%)= " + df.format(fgts) + ";");
+		System.out.println("\nTotal discounts = "+ df.format(descontos) + ";");
+		System.out.println("****NET SALARY = "+ df.format(salarioLiq)+ " *****.");
 
 	}
 }
