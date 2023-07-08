@@ -13,11 +13,13 @@
 
 package controlStructures;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 public class Bhaskara {
 
 public static void main(String[] args) {
 Scanner scan = new Scanner(System.in);
-		
+DecimalFormat df = new DecimalFormat ("###,###.##");
+
 	System.out.println("This program will calculate a quadratic equation using Bhaskara formula!"
 	+" Remember, quadratic equation has the value of:  Ax² + Bx + C = 0.");
 	
@@ -56,12 +58,12 @@ Scanner scan = new Scanner(System.in);
 				double result1 = varA*(x1*x1) + (x1*varB) + varC;
 				double result2 = varA*(x2*x2) + (x2*varB) + varC;
 							
-				System.out.println("The formula: "+varA +"x² + "+varB+ "x + " +varC +"= 0");
-				System.out.println("Has Delta = " +delta);
-				System.out.println("X1 = " +x1);
-				System.out.println("X2 = " +x2);
-				System.out.println("Final result x' = " + result1);
-				System.out.println("Final result x''= " + result2);
+				System.out.println("The formula: "+ varA +"x² + "+varB+ "x + " +varC +"= 0");
+				System.out.println("Has Delta = " + df.format(delta));
+				System.out.println("X1 = " +df.format(x1));
+				System.out.println("X2 = " +df.format(x2));
+				System.out.println("Final result x' = " + df.format(result1));
+				System.out.println("Final result x''= " + df.format(result2));
 			}
 	}
 }
