@@ -29,6 +29,6 @@ public class IsPrime {
 		System.out.println("It is a prime number.");
 	}
 	
-		
+	
 	}
 }
